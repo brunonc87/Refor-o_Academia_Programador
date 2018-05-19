@@ -9,5 +9,14 @@ namespace VendaProdutos.Domain.Interface
 {
     public interface IRepository<T> where T : Entidade
     {
+        T Adicionar(T entidade);
+
+        void Editar(T entidade);
+
+        void Excluir(int Id);
+
+        IEnumerable<T> GetAll();
+
+        T GetById(int Id);
     }
 }

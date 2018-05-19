@@ -8,7 +8,7 @@ namespace VendaProdutos.Domain.Abstract
 {
     public abstract class Entidade
     {
-        int Id;
+        public int Id;
 
         public abstract void Validar();
     }
